@@ -1,0 +1,92 @@
+header {
+	background-color: #2E3EC7;
+	color: #EFDCDC;
+}
+nav a {
+	color: #fff;
+	font-size: 20px;
+}
+#about {
+	height: 70vh;
+	width:100%;
+	background-image:url("https://image.freepik.com/free-vector/code-typing-concept-illustration_114360-3581.jpg");
+	background-repeat: no-repeat;
+    background-size: 80vh;
+}
+#about h2 {
+	padding-top:150px;
+}
+#about i {
+	font-size: 50px;
+	padding: 10px;
+}
+.fa-html5 {
+	color: 	#e34c26;
+}
+.fa-css3-alt {
+	color: 	#2965f1;
+}
+.fa-js-square {
+	color: #f0db4f;
+}
+.fa-bootstrap {
+	color: #0275d8;
+}
+#projects {
+	background-color: #2F0639;
+	color:#EEEEF1;
+	box-sizing: border-box;
+}
+.card {
+	color: #2F0639;
+}
+.card-header {
+	font-size: 20px;
+	font-weight: bold;
+}
+.row {
+	padding:20px 0;
+}
+img {
+	width: 300px;
+}
+footer {
+	background-color: #12232E;
+	color:#fff;
+	padding: 30px;
+}
+footer ul {
+	list-style-type: none;
+	padding-top:10px;
+}
+footer li {
+	display: inline;
+}
+footer a {
+	padding-left: 5px;
+}
+
+/* PHONES AND TABS */
+@media screen and (max-width: 1024px) {
+  #about {
+  	background: none;
+  }
+
+}
+/* TABS */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #about {
+  	height: 40vh;
+  }
+}
+/* PHONES */
+@media screen and (max-width: 768px) {
+  footer li {
+  	text-align: left;
+  	display: block;
+  	padding: 0;
+  }
+  footer a {
+  	padding-left: 10px;
+  }
+}
