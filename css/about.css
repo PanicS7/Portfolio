@@ -1,0 +1,96 @@
+/*** MAP 
+1. About page
+2. @media
+***/
+
+
+/* 1. About page */
+
+#about-page {
+    padding: 50px 20px;
+    background: rgb(199, 254, 255);
+    background: -moz-linear-gradient(325deg, rgba(199, 254, 255, 1) 0%, rgba(113, 152, 255, 1) 100%);
+    background: -webkit-linear-gradient(325deg, rgba(199, 254, 255, 1) 0%, rgba(113, 152, 255, 1) 100%);
+    background: linear-gradient(325deg, rgba(199, 254, 255, 1) 0%, rgba(113, 152, 255, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#c7feff", endColorstr="#7198ff", GradientType=1);
+}
+
+#about-page h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+#about-technologies-container p {
+    margin: 10px;
+    font-size: 23px;
+}
+
+#about-technologies-container .icon-size {
+    width: 18px;
+    height: 16px;
+}
+
+#about-technologies-container em {
+    font-size: 16px;
+}
+
+#about-image-container {
+    display: none;
+}
+
+
+/* 2. @media */
+
+@media only screen and (min-width: 1024px) {
+    #about-technologies-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 50px;
+        justify-content: space-evenly;
+    }
+    #about-image-container {
+        margin: 10px auto;
+        display: block;
+    }
+    #about-image-container img {
+        width: 500px;
+        /** fix space bellow img **/
+        vertical-align: middle;
+    }
+    #about-image-container figcaption {
+        width: 500px;
+        color: #fff;
+        background: #2e3438;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    #about-image-container a {
+        color: #f00;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    #about-page h2 {
+        font-size: 5rem;
+    }
+    #about-technologies-container p {
+        font-size: 3rem;
+    }
+    #about-technologies-container em {
+        font-size: 2.5rem;
+    }
+    #about-image-container img {
+        width: 130%;
+        height: 120%;
+    }
+    #about-image-container figcaption {
+        width: 130%;
+        color: #fff;
+        background: #2e3438;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
